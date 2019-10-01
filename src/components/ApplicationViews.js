@@ -4,12 +4,12 @@ import { withRouter } from "react-router-dom"
 import Register from "./auth/Register"
 import Login from "./auth/Login"
 import ParkExplorer from "./home/ParkExplorer"
+import MyItinerary from "./home/MyItinerary"
 
 
 const ApplicationViews = () => {
     return (
-        <React.Fragment>
-
+        <>
             <Route
                 exact path="/" render={props => {
                     return <ParkExplorer {...props} />
@@ -51,17 +51,12 @@ const ApplicationViews = () => {
             />
 
             <Route
-                path="/itinerary" render={props => {
-                    return (
-                        <>
-                            <h1>Itinerary</h1>
-                            <img className="swings" src={require('./home/swings.jpeg')} alt="My Dog" />
-                        </>
-                    )
+                path="/myitinerary" render={props => {
+                    return <MyItinerary />
                 }}
             />
 
-        </React.Fragment>
+        </>
     )
 }
 

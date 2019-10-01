@@ -1,4 +1,5 @@
-import React, {Component} from "react"
+// import React, {Component} from "react"
+import React from "react"
 import { Route } from "react-router-dom"
 import NavBar from "./nav/NavBar"
 import ApplicationViews from "./ApplicationViews"
